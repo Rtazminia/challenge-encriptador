@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Entrega Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo__alura" src="./assets/Logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="contenedor__textarea">
+            <textarea class="text-area" name="input-textarea" id="input-texto" placeholder="Ingrese el texto aquí..." required></textarea>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+            <div class="informacion">
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="imagen solo letras minúsculas y sin acentos">
+                <h6 class="texto-informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+        </section>
+        <section class="contenedor__mensaje">
+            <textarea class="mensaje" name="output-textarea" id="output-texto" placeholder="El texto apararecerá aquí..." readonly></textarea>
+            <div class="fondo">
+                <button class="btn-copiar" onclick="boton__copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>   
+    <script src="script.js"></script>
+
+    
+
+
+
+
+
+</body>
+</html>
